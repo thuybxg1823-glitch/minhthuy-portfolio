@@ -2584,3 +2584,33 @@ body::before {
 
     background: rgba(7, 16, 10, 0.75);
 }
+.n2 {
+    background: linear-gradient(
+        to left,
+        #28ac6a,
+        #30da80,
+        #19cc72,
+        #6affb2,
+        #1bce72,
+        #25ad65
+    );
+
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 7s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 300% center;
+    }
+}
+.n1{color:#f4f6f5;
+    text-shadow: 3px 3px 4px rgb(139, 213, 165);
+}
