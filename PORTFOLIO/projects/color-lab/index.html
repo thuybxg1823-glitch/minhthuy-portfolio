@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DOM Color Lab — Minh Thùy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="lab">
+
+        <header class="lab-header">
+
+            <div>
+                <p class="eyebrow">PROJECT 01 // JAVASCRIPT</p>
+
+                <h1>DOM <span>Color Lab</span></h1>
+
+                <p class="intro">
+                    An interactive experiment with DOM manipulation,
+                    color selection and user interaction.
+                </p>
+            </div>
+
+            <div class="status">
+                <span></span>
+                SYSTEM READY
+            </div>
+
+        </header>
+
+
+        <section class="lab-card">
+
+            <!-- KHU VỰC HIỂN THỊ -->
+
+            <div class="preview">
+
+                <div class="preview-top">
+                    <span>LIVE PREVIEW</span>
+                    <span>05 ELEMENTS</span>
+                </div>
+
+                <div id="boxA" class="children">
+
+                    <h3>Child 0</h3>
+                    <h3>Child 1</h3>
+                    <h3>Child 2</h3>
+                    <h3>Child 3</h3>
+                    <h3>Child 4</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- BẢNG ĐIỀU KHIỂN -->
+
+            <div class="controls">
+
+                <p class="control-label">
+                    CONTROL PANEL
+                </p>
+
+
+                <label for="ids">
+                    SELECT COLOR
+                </label>
+
+                <select id="ids">
+
+                    <option value="red">
+                        Đỏ
+                    </option>
+
+                    <option value="blue">
+                        Xanh Dương
+                    </option>
+
+                    <option value="#CC66FF">
+                        Tím
+                    </option>
+
+                    <option value="orange">
+                        Cam
+                    </option>
+
+                    <option value="green">
+                        Xanh Lá
+                    </option>
+
+                </select>
+
+
+                <label for="idtt">
+                    SELECT TARGET
+                </label>
+
+                <select id="idtt">
+
+    <option value="0">
+        Child 0
+    </option>
+
+    <option value="1">
+        Child 1
+    </option>
+
+    <option value="2">
+        Child 2
+    </option>
+
+    <option value="3">
+        Child 3
+    </option>
+
+    <option value="4">
+        Child 4
+    </option>
+
+</select>
+
+
+                <button
+                    id="applyBtn"
+                    onclick="child()"
+                >
+                    APPLY COLOR
+                    <span>→</span>
+                </button>
+
+
+                <div class="hint">
+                    Choose a color and a target,
+                    then apply the change.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="lab-footer">
+            
+
+            <div>
+                HTML
+            </div>
+
+            <div>
+                CSS
+            </div>
+
+            <div class="active">
+                JavaScript
+            </div>
+
+            <div>
+                DOM
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

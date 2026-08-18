@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Minh Thùy | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOOT SEQUENCE -->
+    <div id="bootScreen">
+
+        <div class="boot-content">
+
+            <div class="boot-label">MINH THÙY // SYSTEM</div>
+
+            <div class="boot-title">
+                SYSTEM BOOT
+            </div>
+
+            <div class="boot-line"></div>
+
+            <div class="boot-status">
+                <p>> initializing identity...</p>
+                <p>> loading creativity...</p>
+                <p>> loading code...</p>
+                <p>> connecting to digital garden...</p>
+            </div>
+
+            <div class="boot-progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div id="bootPercent">0%</div>
+
+            <div id="bootWelcome">
+                WELCOME, <span>MINH THÙY.</span>
+            </div>
+
+        </div>
+
+        <button id="skipBoot">SKIP ↗</button>
+
+    </div>
+    <canvas id="particleCanvas"></canvas>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <header>
+        <div class="logo">MT<span>✦</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- TRANG CHÍNH -->
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+
+    <!-- BÊN TRÁI: TOÀN BỘ PHẦN CHỮ -->
+    <div class="hero-text hero-reveal">
+
+        <p class="hello">HELLO, I'M ✦</p>
+
+        <h1 class="hero-name">
+            Nguyễn<br>
+            <span>Minh Thùy</span>
+        </h1>
+
+        <p class="subtitle hero-subtitle">
+            Information Technology Student
+        </p>
+
+        <p class="description hero-description">
+            Learning. Creating. Growing.
+            <br>
+            One line of code at a time.
+        </p>
+
+    </div>
+
+
+    <!-- BÊN PHẢI: AVATAR -->
+    <div class="hero-art">
+
+        <div class="avatar-glow"></div>
+
+        <div class="avatar-frame">
+            <img src="avt.png" alt="Minh Thùy">
+        </div>
+
+        <div class="orbit orbit-1">
+            &lt;/&gt;
+        </div>
+
+        <div class="orbit orbit-2">
+            JS
+        </div>
+
+        <div class="orbit orbit-3">
+            ♡
+        </div>
+
+        <div class="sparkle">✦</div>
+        <div class="sparkle two">✧</div>
+
+    </div>
+
+
+    <!-- NÚT: NẰM DƯỚI CẢ HAI -->
+    <div class="buttons">
+
+        <a href="#about" class="btn primary">
+            Explore my world →
+        </a>
+
+        <a href="#projects" class="btn">
+            View projects
+        </a>
+
+    </div>
+
+</section>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <section id="about" class="about-section">
+
+    <div class="section-heading">
+        <span class="section-number">01</span>
+        <p>ABOUT ME</p>
+        <h2>Nice to meet you<span>✦</span></h2>
+    </div>
+
+
+    <div class="about-grid">
+
+        <!-- PROFILE -->
+        <div class="about-profile reveal-card">
+
+            <div class="profile-top">
+                <div class="status-dot"></div>
+                <span>PROFILE.EXE</span>
+            </div>
+
+            <h3>Nguyễn Minh Thùy</h3>
+
+            <p class="profile-role">
+                Information Technology Student
+            </p>
+
+            <p>
+                I'm currently learning how to turn ideas
+                into websites through HTML, CSS and JavaScript.
+            </p>
+
+            <div class="personality-tags">
+                <span>♡ Dễ thương</span>
+                <span>✦ Thân thiện</span>
+                <span>◌ Bình tĩnh</span>
+            </div>
+
+        </div>
+
+
+        <!-- INTRO -->
+        <div class="about-intro reveal-card">
+
+            <div class="terminal-line">
+                <span>➜</span>
+                whoami
+            </div>
+
+            <h3>
+                Learning.
+                <br>
+                Creating.
+                <br>
+                <span>Growing.</span>
+            </h3>
+
+            <p>
+                Mình thích khám phá những thứ mới,
+                đặc biệt là công nghệ và web development.
+                Portfolio này là nơi mình lưu lại hành trình
+                từ những dòng code đầu tiên.
+            </p>
+
+        </div>
+
+
+        <!-- INTERESTS -->
+        <div class="about-interests reveal-card">
+
+            <p class="mini-title">CURRENTLY INTO</p>
+
+            <div class="interest">
+                <span class="interest-icon">♫</span>
+                <div>
+                    <strong>Music</strong>
+                    <small>Nghe nhạc</small>
+                </div>
+            </div>
+
+            <div class="interest">
+                <span class="interest-icon">▣</span>
+                <div>
+                    <strong>Movies</strong>
+                    <small>Xem phim</small>
+                </div>
+            </div>
+
+            <div class="interest">
+                <span class="interest-icon">♡</span>
+                <div>
+                    <strong>Snacks</strong>
+                    <small>Ăn vặt</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SKILL LEVEL -->
+        <div class="about-skills reveal-card">
+
+            <p class="mini-title">MY CURRENT STACK</p>
+
+            <div class="skill-row">
+                <div>
+                    <span>HTML</span>
+                    <small>Learning</small>
+                </div>
+
+                <div class="skill-bar">
+                    <span style="width: 72%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-row">
+                <div>
+                    <span>CSS</span>
+                    <small>Learning</small>
+                </div>
+
+                <div class="skill-bar">
+                    <span style="width: 58%"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-row">
+                <div>
+                    <span>JavaScript</span>
+                    <small>Learning</small>
+                </div>
+
+                <div class="skill-bar">
+                    <span style="width: 40%"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        </section>
+        <!-- SKILLS -->
+        <section id="skills" class="section reveal">
+            <p class="section-number">02</p>
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <div class="skill-icon">HTML</div>
+                    <h3>HTML</h3>
+                    <p>Building the structure of websites.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">CSS</div>
+                    <h3>CSS</h3>
+                    <p>Learning how to make websites beautiful.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Making websites interactive.</p>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="section reveal">
+            <p class="section-number">03</p>
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card featured-project">
+
+    <div class="project-number">01</div>
+
+    <div class="project-content">
+
+        <p class="project-type">
+            JAVASCRIPT / DOM
+        </p>
+
+        <h3>DOM Color Lab</h3>
+
+        <p>
+            Một mini interactive project được tạo để
+            thực hành DOM manipulation, lựa chọn màu
+            và tương tác với các phần tử HTML.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>DOM</span>
+        </div>
+
+        <a
+            href="projects/color-lab/index.html"
+            class="project-link"
+            target="_blank"
+        >
+            LIVE DEMO
+            <span>↗</span>
+        </a>
+
+    </div>
+
+    <div class="project-preview">
+
+        <div class="preview-glow"></div>
+
+        <div class="mini-window">
+
+            <div class="mini-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="mini-content">
+
+                <div>Child 0</div>
+                <div class="active-child">Child 1</div>
+                <div>Child 2</div>
+                <div>Child 3</div>
+                <div>Child 4</div>
+
+            </div>
+
+        </div>
+
+        <div class="floating-code">
+            &lt;/&gt;
+        </div>
+
+    </div>
+
+</div>
+                <div class="project-card nextgen-project">
+
+    <div class="project-number">02</div>
+
+    <div class="project-content">
+
+        <p class="project-type">
+            CSS / ANIMATION
+        </p>
+
+        <h3>NextGen IT Center</h3>
+
+        <p>
+            Một bài thực hành CSS tập trung vào
+            gradient border, animation và hiệu ứng
+            chuyển động cho giao diện.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Animation</span>
+            <span>Gradient</span>
+        </div>
+
+        <a
+            href="../PORTFOLIO/projects/border/unit4.html"
+            class="project-link"
+            target="_blank"
+        >
+            LIVE DEMO
+            <span>↗</span>
+        </a>
+
+    </div>
+
+    <div class="project-preview nextgen-preview">
+
+        <div class="nextgen-card">
+            NEXTGEN IT CENTER
+        </div>
+
+    </div>
+
+</div>
+                <div class="project-card">
+
+    <div class="project-number">03</div>
+
+    <div class="project-content">
+
+        <p class="project-type">
+            HTML / INTERACTION
+        </p>
+
+        <h3>Interactive Cipher Quiz</h3>
+
+        <p>
+            Một mini quiz tương tác sử dụng
+            Image Map để tạo các vùng lựa chọn
+            và dẫn người dùng đến từng câu đố.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>Image Map</span>
+            <span>Interactive UI</span>
+        </div>
+
+        <a
+            href="projects/mat-thu/Đố vui.html"
+            class="project-link"
+            target="_blank"
+        >
+            LIVE DEMO
+            <span>↗</span>
+        </a>
+
+    </div>
+
+    <div class="project-preview cipher-preview">
+
+        <div class="cipher-card">
+
+            <div class="cipher-symbol">?</div>
+
+            <div class="cipher-title">
+                CHOOSE YOUR<br>
+                <span>CIPHER</span>
+            </div>
+
+            <div class="cipher-options">
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <!-- CONTACT -->
+
+<section id="contact" class="section contact-section reveal">
+
+    <p class="section-number">04</p>
+
+    <div class="contact-header">
+        <div>
+            <p class="contact-label">LET'S CONNECT</p>
+
+            <h2>
+                Let's build
+                <span>something.</span>
+            </h2>
+        </div>
+
+        <p class="contact-intro">
+            I'm still learning, experimenting,
+            and turning ideas into small projects.
+            Feel free to say hello!
+        </p>
+    </div>
+
+
+    <div class="contact-grid">
+
+        <a
+            href="mailto:your-email@gmail.com"
+            class="contact-card"
+        >
+            <div>
+                <span class="contact-icon">@</span>
+
+                <h3>Email</h3>
+
+                <p>
+                    thuybxg1823@gmail.com
+                </p>
+            </div>
+
+            <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <div class="contact-card">
+
+            <div>
+                <span class="contact-icon">✦</span>
+
+                <h3>About me</h3>
+
+                <p>
+                    IT Student · Front-end learner
+                </p>
+            </div>
+
+            <span class="contact-arrow">✦</span>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+    <!-- FOOTER -->
+     <footer class="footer">
+
+    <div class="footer-top">
+        <span>MT ✦</span>
+
+        <p>
+            Built with curiosity & a lot of code.
+        </p>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Nguyễn Minh Thùy</span>
+
+        <span>
+            HTML · CSS · JavaScript
+        </span>
+
+        <span>KEEP LEARNING ✦</span>
+    </div>
+
+</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

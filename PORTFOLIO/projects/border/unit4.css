@@ -1,0 +1,29 @@
+.box {border: 4px solid;
+    border-image: linear-gradient(to right, red, yellow, green) 1;}
+.box-card {
+    position:relative;
+    width: 34%;
+    background: #101a16;
+    border-radius: 16px;
+    border: 4px solid transparent;
+    border-image: conic-gradient(from var(--border-angle),red, yellow, lime, aqua, blue, red) 1;
+    animation: rotate-border 4s linear infinite;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 33%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 4px 4px 7px rgb(157, 224, 195);
+    color:#F1FFF6;
+    font-weight: bold;
+}
+@keyframes rotate-border {
+    to {
+        --border-angle:360deg;
+    }
+}
+@property --border-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: true;
+}
